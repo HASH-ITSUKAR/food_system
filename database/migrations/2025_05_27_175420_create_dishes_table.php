@@ -22,8 +22,9 @@ return new class extends Migration
             
             $table->foreign('idCategory')
                 ->references('idCategory')
-                ->on('Category')
+                ->on('category')
                 ->onDelete('no action');
+
         });
     }
 
