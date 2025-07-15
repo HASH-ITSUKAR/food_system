@@ -25,7 +25,7 @@ return new class extends Migration
             
             $table->foreign('idDishes')
                 ->references('idDishes')
-                ->on('Dishes')
+                ->on('dishes')
                 ->onDelete('no action');
         });
     }

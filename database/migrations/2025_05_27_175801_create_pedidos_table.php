@@ -26,7 +26,7 @@ return new class extends Migration
 
             $table->foreign('idEmployee')
                 ->references('idEmployee')
-                ->on('Employee')
+                ->on('employee')
                 ->onDelete('no action');
         });
     }
