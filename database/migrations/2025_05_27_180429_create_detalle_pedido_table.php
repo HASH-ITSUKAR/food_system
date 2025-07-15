@@ -20,7 +20,7 @@ return new class extends Migration
 
             $table->foreign('idPedido')
                 ->references('idPedido')
-                ->on('Pedido')
+                ->on('pedido')
                 ->onDelete('cascade');
             
             $table->foreign('idDishes')
