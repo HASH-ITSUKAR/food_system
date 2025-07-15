@@ -21,8 +21,9 @@ return new class extends Migration
             
             $table->foreign('idPosition')
                 ->references('idPosition')
-                ->on('Position')
+                ->on('position')
                 ->onDelete('no action');
+
         });
     }
 
